@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "183203433344",
+    "firebase_url": "https://newsstand-91701.firebaseio.com",
+    "project_id": "newsstand-91701",
+    "storage_bucket": "newsstand-91701.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183203433344:android:bbca0cc79146bce5",
+        "android_client_info": {
+          "package_name": "com.rishabh.newstand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183203433344-ahmgto70sdcvc7celsf1pt7o10b7d737.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishabh.newstand",
+            "certificate_hash": "7d1a7058a002e71771c6a3d5b6d8b25a4d73218e"
+          }
+        },
+        {
+          "client_id": "183203433344-7g7n6ltcse42kgh4kelkfuiu022483cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishabh.newstand",
+            "certificate_hash": "a4dece20900565641ac7b4aeb7a25689c13c4486"
+          }
+        },
+        {
+          "client_id": "183203433344-j58ahgliho6ttvu8uigl8m6ircte4dkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBedeeibGI-W-w16BILZAkHveWD2up-Shw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183203433344-j58ahgliho6ttvu8uigl8m6ircte4dkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

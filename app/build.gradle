@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 28
+    /*  signingConfigs {
+          debug {
+              keyAlias 'New Stand'
+              keyPassword 'pass@1234'
+              storeFile file("$rootDir/Newstand Keystore.jks")
+              storePassword 'pass@1234'
+          }
+      }*/
+    defaultConfig {
+        applicationId "com.rishabh.newstand"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    def ver_arch_comp = "1.1.1"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    /*testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    */
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    testImplementation 'org.powermock:powermock-module-junit4:1.6.2'
+    testImplementation 'org.powermock:powermock-module-junit4-rule:1.6.2'
+    testImplementation 'org.powermock:powermock-api-mockito:1.6.2'
+    testImplementation 'org.powermock:powermock-classloading-xstream:1.6.2'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.android.support:palette-v7:28.0.0"
+    implementation "android.arch.persistence.room:runtime:$ver_arch_comp"
+    annotationProcessor "android.arch.persistence.room:compiler:$ver_arch_comp"
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$ver_arch_comp"
+    // alternatively - just ViewModel
+    implementation "android.arch.lifecycle:viewmodel:$ver_arch_comp" // use -ktx for Kotlin
+    // alternatively - just LiveData
+    implementation "android.arch.lifecycle:livedata:$ver_arch_comp"
+    // alternatively - Lifecycles only (no ViewModel or LiveData).
+    //     Support library depends on this lightweight import
+    implementation "android.arch.lifecycle:runtime:$ver_arch_comp"
+
+
+    implementation 'com.google.dagger:dagger:' + dagger
+    annotationProcessor 'com.google.dagger:dagger-compiler:' + dagger
+    annotationProcessor 'com.google.dagger:dagger-android-processor:' + dagger
+    implementation 'com.google.dagger:dagger-android-support:' + dagger
+
+    annotationProcessor "android.arch.lifecycle:compiler:$ver_arch_comp" // use kapt for Kotlin
+
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.6'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+}

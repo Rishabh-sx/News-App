@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">News Stand</string>
+    <string name="no_network_error">No Network</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_news">News</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_sources">Sources</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular">Popular</string>
+    <string name="technology">Technology</string>
+    <string name="business">Business</string>
+    <string name="s_saved_news">Saved News</string>
+    <string name="s_headlines">Headlines</string>
+    <string name="s_sources">Sources</string>
+    <!--
+    Search Activity
+-->
+    <string name="s_search">Search</string>
+    <string name="s_view_more">view more</string>
+    <string name="s_widget_title">New Stand - Popular</string>
+    <string name="s_brwoser_not_found">Browser not found</string>
+    <string name="s_no_iten_avialable">No Item Available !</string>
+    <string name="s_browser_not_found">Browser not found</string>
+    <string name="s_share_news">Share News</string>
+    <string name="mark_save_unsave">mark save unsave</string>
+    <string name="cancel">Cancel</string>
+    <string name="news_image">News Image</string>
+    <string name="share">Share</string>
+    <string name="headlines">Headlines</string>
+    <string name="search">Search</string>
+    <string name="s_save_image">Save Image</string>
+
+</resources>
